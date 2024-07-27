@@ -57,6 +57,7 @@ input{
     padding: 8px ;
 }
 button{
+    width:100%;
     background-color: black;
     border:  2px solid black;
     border-radius: 25px;
