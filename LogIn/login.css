@@ -1,3 +1,6 @@
+.body{
+    font-family:Arial, Helvetica, sans-serif;
+}
 .container{
     display: flex;
     flex-direction: row;
@@ -11,14 +14,15 @@
     box-shadow: #00A2E8 0px 5px 15px;
 }
 .title{
-    margin: 30px;
+    margin-top: 80px;
+    margin-left: 60px;
 }
 .title> h1{
     
     font-size: 60px;
 }
 .form{
-    margin-right: 90px ;
+    margin-right: 130px ;
     margin-top: 200px;
 }
 
