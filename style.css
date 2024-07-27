@@ -2,6 +2,13 @@ body{
     background-color: black;
 
 }
+h3{
+    color: white;
+}
+/* .form-control{
+    color: white;
+    width: 20%;
+} */
 label{
     font-size: 25px;
     color: white;
@@ -31,7 +38,7 @@ textarea{
     margin: 10px;
     padding: 10px;
 }
-.form-group{
+.data > .form-group{
     display: flex;
     flex-direction: column;
 }
@@ -39,4 +46,19 @@ textarea{
     width: 80px;
     height: 40px;
     border-radius: 15px;
+}
+.task{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+    gap: 8px;
+}
+
+.task > .kanban-column{
+    width: 33%;
+    min-height: 400px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 8px;
 }
