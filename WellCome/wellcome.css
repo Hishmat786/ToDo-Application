@@ -4,7 +4,7 @@
     border: 2px solid #00A2E8;
     border-radius: 40% 25% 74% 25% / 34% 25% 75% 41%;
     background-color: #00A2E8;
-    
+    box-shadow: #00A2E8 0px 5px 15px;
 }
 
 .wellcome{
@@ -31,9 +31,14 @@ h2{
 }
 button{
     width: 250px;
-    height: 35px;
     margin-right: 35px;
     background-color: #00A2E8;
     border:  2px solid #00A2e8;
-    border-radius: 15px;
+    border-radius: 25px;
+    font-size: 25px ;
+    padding: 12px;
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: #00A2E8 0px 5px 10px;
 }
