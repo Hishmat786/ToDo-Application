@@ -85,7 +85,7 @@ const generatingHTML = (obj) => {
       className = "";
   }
   return `
-                <div class="card" style="width: 20rem; margin-bottom: 15px">
+                <div class="card" draggable="true" style="width: 20rem; margin-bottom: 15px">
                     <div class="card-body">
                     <div class="d-flex align-items-start gap-4">
                         <span class="position-relative me-2">
@@ -101,3 +101,25 @@ const generatingHTML = (obj) => {
                     </div>
                 </div>`;
 };
+
+
+let cards= document.getElementsByClassName('card')
+let toDo= document.getElementById('todo')
+let progress= document.getElementById('progress')
+let done= document.getElementById('done')
+
+for(card of cards){
+  card.addEventListener('dragstart', function(e){
+    let selected = e.target;
+
+    progress.addEventListener('dragover', function(e){
+      e.preventDefault();
+    })
+
+    progress.addEventListener('drop', function(e){
+      progress.appendChild(selected);
+      selected=null;
+    })
+
+  })
+}
