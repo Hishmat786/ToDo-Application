@@ -31,7 +31,7 @@ const addTask = () => {
   });
 
   const obj = {
-    id: Date.now(), // unique id
+    id: Date.now(), 
     des: desc.value,
     tas: task.value,
     prior: priority.value,
