@@ -4,7 +4,7 @@ body {
 }
 
 .main-container {
-    max-width: 1080px;
+    max-width: 1180px;
     margin: 40px auto;
     padding: 20px;
     background-color: #333;
@@ -24,7 +24,9 @@ body {
 }
 
 .input-data {
+    
     background-color: #444;
+    
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 20px 2px rgba(199, 199, 8, 0.726);
@@ -80,16 +82,16 @@ body {
     margin-top: 40px;
     display: flex;
     justify-content: space-around;
-    flex-direction: row;
+    /* flex-direction: row; */
     flex-wrap: wrap ;
-    /* gap: 20px; */
+    gap: 10px;
 }
 
 .ToDo-container, .In-Progress-container, .Done-container {
     margin-bottom: 20px;
     border: 2px solid yellow;
     border-radius: 12px;
-    width: 33%;
+    width: 350px;
     padding: 8px;
 }
 
@@ -123,6 +125,7 @@ body {
 }
 .card-body:hover{
     box-shadow: 0 0 10px white;
+    cursor: pointer;
 }
 
 .card-title {
