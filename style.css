@@ -48,7 +48,7 @@ body {
 
 .input-grp input:focus, .input-grp textarea:focus {
     border-color: #666;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(16, 115, 243, 0.733);
 }
 
 .input-status {
@@ -80,6 +80,8 @@ body {
     margin-top: 40px;
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap ;
     gap: 20px;
 }
 
