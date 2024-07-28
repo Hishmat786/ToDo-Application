@@ -79,7 +79,7 @@ body {
 .todo-container {
     margin-top: 40px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap ;
     gap: 20px;
@@ -124,4 +124,15 @@ body {
 
 .card-text {
     color: #ccc;
+}
+.circle {
+    width: 20px; 
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle:hover{
+    cursor: pointer;
 }
