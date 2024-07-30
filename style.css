@@ -89,9 +89,12 @@ body {
 
 .ToDo-container, .In-Progress-container, .Done-container {
     margin-bottom: 20px;
+}
+.column{
     border: 2px solid yellow;
     border-radius: 12px;
     width: 350px;
+    min-height: 400px;
     padding: 8px;
 }
 
