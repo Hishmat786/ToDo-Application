@@ -32,9 +32,10 @@
     </div>
 
     <script>
-      document.getElementById("loginButton").addEventListener("click", function() {
-          window.location.href = "D:/Web3gle/ToDo-Application/index.html";
-      });
+      document.getElementById('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            window.location.href = '../TaskManage/index.html';
+        });
     </script>
   </body>
 </html>
