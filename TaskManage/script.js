@@ -1,4 +1,4 @@
-let date = document.getElementsByClassName("date");
+let date = document.getElementsByClassName("date")[0];
 let desc = document.getElementsByClassName("description")[0];
 let task = document.getElementsByClassName("task")[0];
 let priority = document.getElementsByClassName("priority")[0];
@@ -28,7 +28,7 @@ const addTask = () => {
     day: "numeric",
   });
 
-  const obj = {
+  let obj = {
     id: Date.now(), 
     des: desc.value,
     tas: task.value,
@@ -41,7 +41,15 @@ const addTask = () => {
   localStorage.setItem("Task", JSON.stringify(data));
   addTaskToContainer(obj);
   
+  
+    desc.value = ""
+    task.value = ""
+    priority.value = ""
+    date.value = ""
+  
+  
 };
+
 
 const deleteTask = (id) => {
   data = data.filter(task => task.id !== id);
