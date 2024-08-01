@@ -40,6 +40,7 @@ const addTask = () => {
   data.push(obj);
   localStorage.setItem("Task", JSON.stringify(data));
   addTaskToContainer(obj);
+  
 };
 
 const deleteTask = (id) => {
