@@ -24,17 +24,20 @@
                     <label for="password">Enter Password</label>
                     <input type="password" required>
                 </div>
-                <button class="btn" id="loginButton"> Log in</button>
+                <!-- <button class="btn" id="loginButton"> Log in</button> -->
+                <div class="button">
+                  <button class="btn" id="loginButton">Log In</button>
+              </div>
             </div>
         </form>
 
     </div>
     </div>
-
     <script>
-      document.getElementById("loginButton").addEventListener("click", function() {
-          window.location.href = "D:/Web3gle/ToDo-Application/index.html";
-      });
-    </script>
+      document.getElementById('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            window.location.href = '../TaskManage/index.html';
+        });
+  </script>
   </body>
 </html>
