@@ -1,9 +1,10 @@
 body {
     background-color: #000;
     font-family: Arial, sans-serif;
-}
-
-.main-container {
+    transition: background-color 0.5s; 
+  }
+  
+  .main-container {
     max-width: 1180px;
     margin: 40px auto;
     padding: 20px;
@@ -11,141 +12,154 @@ body {
     border: 1px solid #444;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    
-}
-
-.heading {
+    transition: box-shadow 0.5s; 
+  }
+  
+  .main-container:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); 
+  }
+  
+  .heading {
     text-align: center;
     margin-bottom: 20px;
-}
-
-.heading h1 {
+  }
+  
+  .heading h1 {
     color: #fff;
-}
-
-.input-data {
-    
+    animation: fadeIn 2s; 
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .input-data {
     background-color: #444;
-    
     padding: 20px;
+    color: white;
     border-radius: 10px;
     box-shadow: 0px 0px 20px 2px rgba(199, 199, 8, 0.726);
-}
-
-.input-grp {
+    transition: box-shadow 0.5s; 
+  }
+  
+  .input-data:hover {
+    box-shadow: 0px 0px 30px 4px rgba(199, 199, 8, 0.9); 
+  }
+  
+  .input-grp {
     margin-bottom: 20px;
 }
 
-.input-grp input, .input-grp textarea {
+.task::placeholder,.description::placeholder{
+      color: white;
+
+  }
+  
+  .input-grp input, .input-grp textarea {
     background-color: #333;
     color: #fff;
     border: 1px solid #444;
     padding: 10px;
     border-radius: 10px;
-}
-
-.input-grp input::placeholder, .input-grp textarea::placeholder {
-    color: #ccc;
+    transition: border-color 0.5s; 
 }
 
 .input-grp input:focus, .input-grp textarea:focus {
     border-color: #666;
     box-shadow: 0 0 10px rgba(16, 115, 243, 0.733);
-}
-
-.input-status {
+  }
+  
+  .input-status {
     margin-top: 20px;
-}
-
-.badges {
+  }
+  
+  .badges {
     margin-bottom: 20px;
-}
-
-.badges label {
+  }
+  
+  .badges label {
     color: #fff;
-}
-
-.badges select {
+  }
+  
+  .badges select {
     background-color: #333;
     color: #fff;
     border: 1px solid #444;
     padding: 10px;
     border-radius: 10px;
-}
-
-.badges select option {
-    background-color: #333;
-    color: #fff;
-}
-
-.todo-container {
+    transition: border-color 0.5s;
+  }
+  
+  .badges select:focus {
+    border-color: #666;
+    box-shadow: 0 0 10px rgba(16, 115, 243, 0.733);
+  }
+  
+  .todo-container {
     margin-top: 40px;
     display: flex;
     justify-content: space-around;
-    /* flex-direction: row; */
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     gap: 10px;
-}
-
-.ToDo-container, .In-Progress-container, .Done-container {
+  }
+  
+  .ToDo-container, .In-Progress-container, .Done-container {
     margin-bottom: 20px;
-}
-.column{
+    transition: transform 0.5s; 
+  }
+  
+  .ToDo-container:hover, .In-Progress-container:hover, .Done-container:hover {
+    transform: scale(1.05); 
+  }
+  
+  .column {
     border: 2px solid yellow;
     border-radius: 12px;
     width: 350px;
     min-height: 400px;
     padding: 8px;
-}
-
-.head-img {
+    transition: border-color 0.5s; 
+  }
+  
+  .column:hover {
+    border-color: orange; 
+  }
+  
+  .head-img {
     margin-bottom: 10px;
-}
-
-.head-img img {
+  }
+  
+  .head-img img {
     width: 30px;
     height: 30px;
     margin-right: 10px;
-}
-
-.head-img h3 {
+  }
+  
+  .head-img h3 {
     display: inline-block;
     color: #fff;
-}
-
-.card {
+  }
+  
+  .card {
     background-color: #333;
     border: 1px solid #444;
     border-radius: 10px;
+    color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin-bottom: 30px;
-    /* border-bottom: red !important;
-    border-left: red !important; */
-}
-
-.card-body {
-    padding: 20px;
-}
-.card-body:hover{
-    box-shadow: 0 0 10px white;
-    cursor: pointer;
-}
-
-.card-title {
-    color: #fff;
-}
-
-.card-text {
-    color: #ccc;
-}
-.circle {
-    width: 20px; 
-    height: 20px;
+    transition: transform 0.5s; 
+  }
+  .circle{
+    text-align: center;
+    width: 19px;
+    height: 19px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.circle:hover{
-    cursor: pointer;
-}
+  }

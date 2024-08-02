@@ -16,7 +16,16 @@ body{
     border-radius: 40% 25% 74% 25% / 34% 25% 75% 41%;
     background-color: rgba(199, 199, 8, 0.726);
     box-shadow: rgba(199, 199, 8, 0.726) 0px 5px 15px;
+    animation: container-fade-in 2s ease-in-out forwards;
 }
+@keyframes container-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 .title{
     margin-top: 80px;
     margin-left: 60px;
@@ -26,7 +35,18 @@ body{
     font-family: "Poppins", sans-serif;
     font-size: 60px;
     color: white;
+    animation: title-text-appear 1s ease-in-out forwards alternate;
 }
+@keyframes title-text-appear {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 .form{
     margin-right: 130px ;
     margin-top: 200px;
@@ -41,6 +61,16 @@ body{
     border-radius: 15px;
     padding: 40px ;
     background-color: white;
+    animation: form-slide-in 1s ease-in-out forwards;
+}
+@keyframes form-slide-in {
+    from {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px)
+    }
 }
 .info{
     display: flex;
