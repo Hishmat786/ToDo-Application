@@ -3,7 +3,66 @@
     font-family: "Poppins", sans-serif;
 }
 body{
-    background-color: white;
+  background: #ee9ca7;
+  background: -webkit-linear-gradient(to top, #ffdde1, #ee9ca7);
+  background: linear-gradient(to top, #ffdde1, #ee9ca7);
+}
+.heading {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 30px;
+  background: linear-gradient(to right, #ed4264, #ffedbc);
+  border-bottom: 1px solid #e9ecef;
+  position: relative;
+}
+.project-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-name h1 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.project-name h1 {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 8px;
+  border-radius: 15px;
+  background: linear-gradient(to left, #ed4264, #f9e3a6);
+  transition: 0.5s;
+}
+.contact:hover {
+  transform: scale(1.1);
+}
+.contact p {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  cursor: pointer;
+}
+
+.content-wrapper {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  background: #ee9ca7;
+  background: -webkit-linear-gradient(to top, #ffdde1, #ee9ca7);
+  background: linear-gradient(to top, #ffdde1, #ee9ca7);
 }
 .container{
     display: flex;
@@ -57,10 +116,10 @@ body{
     flex-direction: column;
     gap: 15px ;
     width: 300px;
-    border: 2px solid rgb(89, 89, 238);
+    border: 2px solid black;
     border-radius: 15px;
     padding: 40px ;
-    background-color: white;
+    background-color: #FFDDE1;
     animation: form-slide-in 1s ease-in-out forwards;
 }
 @keyframes form-slide-in {
@@ -80,10 +139,10 @@ body{
 label{
     font-size: 25px;
     margin-left: 15px;
-    color: rgb(89, 89, 238);
+    color: #EE9CA7;
 }
 h1{
-  color: rgb(89, 89, 238);
+  color: #EE9CA7;
 }
 input{
     font-size: 25px;
@@ -93,7 +152,7 @@ input{
 }
 button{
     width:100%;
-    background-color: rgb(89, 89, 238);
+    background-color: #EE9CA7;
     border:  2px solid black;
     border-radius: 25px;
     font-size: 20px ;
@@ -102,7 +161,7 @@ button{
 }
 button:hover{
     cursor: pointer;
-    box-shadow: yellow 0px 5px 10px;
+    box-shadow: #F34755 0px 5px 10px;
 }
 
 img{
