@@ -2,11 +2,15 @@ body{
     background-color: black;
 }
 .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
     height: 600px;
-    border: 2px solid rgba(199, 199, 8, 0.726);
+    border: 2px solid rgba(17, 142, 214, 0.925);
     border-radius: 40% 25% 74% 25% / 34% 25% 75% 41%;
-    background-color: rgba(199, 199, 8, 0.726);
+    background-color: rgba(17, 142, 214, 0.925);
     box-shadow: rgba(199, 199, 8, 0.726) 0px 5px 15px;
 }
 
@@ -30,7 +34,8 @@ h2{
 
 .button{
     display: flex;
-    justify-content: end;
+    justify-content: start;
+    margin-top: 20px;
 }
 button{
     width: 250px;
@@ -45,4 +50,17 @@ button{
 button:hover{
     cursor: pointer;
     box-shadow: yellow 0px 5px 10px;
+}
+
+img{
+    margin-top: 30px;
+    width: 800px;
+    height: 580px;
+}
+
+@media screen and (max-width: 500px) {
+    img{
+        width: 400px;
+        height: 290px;
+    }
 }
