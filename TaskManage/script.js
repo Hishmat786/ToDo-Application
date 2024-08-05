@@ -1,11 +1,13 @@
 let date = document.getElementsByClassName("date")[0];
-let desc = document.getElementsByClassName("description")[0];
+// let desc = document.getElementsByClassName("description")[0];
 let task = document.getElementsByClassName("task")[0];
 let priority = document.getElementsByClassName("priority")[0];
 let todo = document.getElementById("todo");
 let progress = document.getElementById("progress");
 let done = document.getElementById("done");
 let data = [];
+
+
 
 window.addEventListener("load", () => {
   const storedTask = localStorage.getItem("Task");
@@ -28,9 +30,12 @@ const addTask = () => {
     day: "numeric",
   });
 
+  console.log("Add Taask is clicked");
+  
+
   let obj = {
     id: Date.now(), 
-    des: desc.value,
+    // des: desc.value,
     tas: task.value,
     prior: priority.value,
     tim: timestring,
@@ -42,7 +47,7 @@ const addTask = () => {
   addTaskToContainer(obj);
   
   
-    desc.value = ""
+    // desc.value = ""
     task.value = ""
     priority.value = ""
     date.value = ""
@@ -74,7 +79,7 @@ const addTaskToContainer = (task) => {
 };
 
 const generatingHTML = (obj) => {
-  const { id, des, prior, tas, tim } = obj;
+  const { id, prior, tas, tim } = obj;
   let className = "";
 
   switch (prior) {
@@ -91,18 +96,18 @@ const generatingHTML = (obj) => {
       className = "";
   }
   return `
-    <div class="card" draggable="true" style="width: 20rem; margin-bottom: 15px" data-id="${id}">
+    <div class="card" draggable="true" style="width: 19rem; margin-bottom: 15px" data-id="${id}">
       <div class="card-body">
         <div class="d-flex align-items-start gap-4">
           <span class="position-relative me-2">
             <span class="position-absolute end-99.5 translate-middle p-2 border border-light rounded-circle ${className}"></span>
           </span>
           <span class="position-relative">
-            <span class="position-absolute translate-middle p-1 border border-light rounded-circle text-white circle" onclick="deleteTask(${id})">x</span>
+            <span class="position-absolute translate-middle circle task-icon" onclick="deleteTask(${id})">x</span>
           </span>
         </div><br>
         <h5 class="card-title">${tas}</h5>
-        <p class="card-text">${des}</p>
+       
         <h6 class="card-text">${tim}</h6>
       </div>
     </div>`;
