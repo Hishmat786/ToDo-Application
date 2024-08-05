@@ -167,5 +167,17 @@ button:hover{
 img{
   width: 850px;
   height: 590px;
-  mix-blend-mode: multiply;
+  /* mix-blend-mode: multiply; */
+}
+@media (max-width: 576px) {
+  img {
+    width: 400px;
+    height: 280px;
+  }
+}
+@media (max-width: 480px) {
+  img {
+    width: 300px;
+    height: 210px;
+  }
 }

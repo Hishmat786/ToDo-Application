@@ -1,63 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="wellcome.css" />
-    <style>
-      @keyframes slideInLeft {
-        0% {
-          transform: translateX(-100%);
-          opacity: 0;
-        }
-        100% {
-          transform: translateX(0);
-          opacity: 1;
-        }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="wellcome.css" />
+  <style>
+    @keyframes slideInLeft {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
       }
 
-      @keyframes fadeIn {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
       }
 
-      @keyframes textAnimation {
-        0% {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        100% {
-          opacity: 1;
-          transform: translateY(0);
-        }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes textAnimation {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
       }
 
-      .container {
-        animation: slideInLeft 1s ease-in-out; 
+      100% {
+        opacity: 1;
+        transform: translateY(0);
       }
+    }
 
-      .wellcome h1 {
-        animation: textAnimation 1s ease-in-out;
-        animation-delay: 0.3s; 
+    .container {
+      animation: slideInLeft 1s ease-in-out;
+    }
 
-      }
+    .wellcome h1 {
+      animation: textAnimation 1s ease-in-out;
+      animation-delay: 0.3s;
 
-      button:hover {
-        transform: scale(1.05);
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-      }
+    }
 
-      button:active {
-        transform: scale(0.95);
-      }
-    </style>
-  </head>
-  <body>
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="heading">
+
+    <div class="project-name">
+      <h1>My Project</h1>
+    </div>
+    <div class="contact">
+      <p>Get in touch</p>
+    </div>
+  </div>
     <div class="container">
       <div class="wellcome">
         <div class="title">
@@ -73,5 +88,6 @@
         <img src="./TaskManage/assets/home.png" alt="">
       </div>
     </div>
-  </body>
+</body>
+
 </html>
