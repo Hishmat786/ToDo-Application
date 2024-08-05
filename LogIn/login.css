@@ -103,4 +103,5 @@ button:hover{
 img{
   width: 850px;
   height: 590px;
+  mix-blend-mode: multiply;
 }
