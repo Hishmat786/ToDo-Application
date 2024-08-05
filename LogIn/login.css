@@ -3,7 +3,7 @@
     font-family: "Poppins", sans-serif;
 }
 body{
-    background-color: black;
+    background-color: white;
 }
 .container{
     display: flex;
@@ -57,7 +57,7 @@ body{
     flex-direction: column;
     gap: 15px ;
     width: 300px;
-    border: 2px solid white;
+    border: 2px solid rgb(89, 89, 238);
     border-radius: 15px;
     padding: 40px ;
     background-color: white;
@@ -80,15 +80,20 @@ body{
 label{
     font-size: 25px;
     margin-left: 15px;
+    color: rgb(89, 89, 238);
+}
+h1{
+  color: rgb(89, 89, 238);
 }
 input{
     font-size: 25px;
     border-radius: 25px;
     padding: 8px ;
+    border-color: rgb(89, 89, 238);
 }
 button{
     width:100%;
-    background-color: black;
+    background-color: rgb(89, 89, 238);
     border:  2px solid black;
     border-radius: 25px;
     font-size: 20px ;
